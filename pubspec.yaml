@@ -1,0 +1,27 @@
+name: youth_skill_app
+description: A Flutter app for an Ed-Tech platform called Youth Skill App.
+
+publish_to: 'none' # Remove this line if you plan to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: 1.2.2                # HTTP package for making API requests
+  csv: ^5.0.0                   # CSV package for reading CSV files
+  url_launcher: ^6.0.20         # For launching URLs
+  shared_preferences: ^2.0.6     # For persisting user preferences
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/courses.csv          # Include the CSV file as an asset
